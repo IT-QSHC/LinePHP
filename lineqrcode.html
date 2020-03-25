@@ -15,11 +15,9 @@
   <script>
     function scanCode() {
       liff.scanCode().then(result => {
-        const stringifiedResult = JSON.parse(result);
+        const stringifiedResult = JSON.stringify(result);
         alert(stringifiedResult);
-        //let url = stringifiedResult.value;
-        //window.location = url;
-        document.getElementById("scanCode").innerHTML = stringifiedResult;
+        document.getElementById("scanCode").textContent = stringifiedResult;
       });
     }
     liff.init({ liffId: "1556133535-ZyRoG6N9" }, () => {}, err => console.error(err.code, error.message));
