@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My LIFF App V2.1</title>
+  <title>My LIFF App V2.2</title>
 </head>
 <body>
   <p id="scanCode"></p>
@@ -17,7 +17,7 @@
       liff.scanCode().then(result => {
         const stringifiedResult = JSON.stringify(result.value);
         //alert(stringifiedResult);
-        let url = = stringifiedResult;
+        let url = stringifiedResult;
         window.location = url;
         document.getElementById("scanCode").textContent = stringifiedResult;
       });
