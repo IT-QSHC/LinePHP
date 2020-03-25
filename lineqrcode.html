@@ -17,6 +17,7 @@
       liff.scanCode().then(result => {
         const stringifiedResult = JSON.stringify(result);
         alert(stringifiedResult);
+        alert("Hello jQuery!");
         document.getElementById("scanCode").textContent = stringifiedResult;
       });
     }
