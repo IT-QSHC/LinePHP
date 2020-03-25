@@ -15,11 +15,11 @@
   <script>
     function scanCode() {
       liff.scanCode().then(result => {
-        const stringifiedResult = JSON.stringify(result);
+        const stringifiedResult = JSON.parse(result);
         alert(stringifiedResult.value);
         let url = stringifiedResult.value;
-        window.location = url;
-        document.getElementById("scanCode").textContent = stringifiedResult;
+        //window.location = url;
+        document.getElementById("scanCode").innerHTML = stringifiedResult.value;
       });
     }
     liff.init({ liffId: "1556133535-ZyRoG6N9" }, () => {}, err => console.error(err.code, error.message));
