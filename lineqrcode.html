@@ -18,7 +18,7 @@
         const stringifiedResult = JSON.stringify(result.value);
         //alert(stringifiedResult);
         let url = stringifiedResult;
-        window.location = url;
+        window.open = url;
         document.getElementById("scanCode").textContent = stringifiedResult;
       });
     }
