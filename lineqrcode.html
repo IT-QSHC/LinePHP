@@ -16,7 +16,9 @@
     function scanCode() {
       liff.scanCode().then(result => {
         const stringifiedResult = JSON.stringify(result.value);
-        alert(stringifiedResult.value);
+        //alert(stringifiedResult);
+        let url = = stringifiedResult;
+        window.location = url;
         document.getElementById("scanCode").textContent = stringifiedResult;
       });
     }
