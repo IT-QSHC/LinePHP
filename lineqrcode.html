@@ -17,7 +17,7 @@
       liff.scanCode().then(result => {
         const stringifiedResult = JSON.parse(result);
         alert(stringifiedResult.value);
-        let url = stringifiedResult.value;
+        //let url = stringifiedResult.value;
         //window.location = url;
         document.getElementById("scanCode").innerHTML = stringifiedResult.value;
       });
