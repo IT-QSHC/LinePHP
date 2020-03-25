@@ -15,8 +15,9 @@
   <script>
     function scanCode() {
       liff.scanCode().then(result => {
-        const stringifiedResult = JSON.stringify(result.value);
+        //const stringifiedResult = JSON.stringify(result.value);
         //alert(stringifiedResult);
+        var stringifiedResult = "http://202.28.117.161/covid19screening";
         let url = stringifiedResult;
         window.open = url;
         document.getElementById("scanCode").textContent = stringifiedResult;
